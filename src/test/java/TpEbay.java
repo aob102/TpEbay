@@ -19,13 +19,12 @@ public class TpEbay {
         driver.get("https://www.ebay.fr/");
         driver.manage().window().maximize();
 
-        //By cookiesSelector = By.id("#gdpr-banner-accept");
-        //driver.findElement(cookiesSelector).click();
+
     }
 
     @AfterMethod
     public void fermerChrome() {
-       // driver.quit();
+        driver.quit();
     }
 
     @Test
